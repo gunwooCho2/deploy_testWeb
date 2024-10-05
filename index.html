@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>조건우 홈페이지</title>
+   <link rel="stylesheet" href="styles.css" />
 </head>
-<body style="background-color: black; position:relative;">
-   <div style="display: flex; justify-content: center; align-items: center; height: 10%; background-color:rgb(255, 208, 66); position:fixed; top:0px; right:0px; width:100%;" >
-      <h1><a href="https://chwhomepage.netlify.app/" style="text-decoration: none; color: rgb(66, 79, 0);">조건우 홈페이지</a></h1>
-   </div>
-   <div style="width: 400px; height: 500px; background-color: rgba(100, 100, 100, 0.823); border-radius: 10%; position:absolute; top:100px; left: 50%; transform: translateX(-50%);">
-      <ol>
-         <li><a href="https://chwhomepage.netlify.app/today" style="text-decoration: none; color: rgba(255, 255, 255, 0.592);">오늘 있었던 일</a></li>
-         <li><a href="https://chwhomepage.netlify.app/tomorrow" style="text-decoration: none; color: rgba(255, 255, 255, 0.592);">내일 할 일</a></li>
-      </ol>
+
+<body>
+   <div class="titlecontainer">
+      <h1 class="titleFont">GW_HomePage</h1>
+      <div class="firstaction" id="firstaction">
+         <img src="img/goaway.png" class="goimgclass">
+         <a href="book.html"><img src="img/book.png" class="actionimg"></a>
+         <a href="game.html"><img src="img/game.png" class="actionimg"></a>
+      </div>
    </div>
 
+    <script>
+      const firstaction = document.getElementById('firstaction');
+
+      firstaction.addEventListener('mouseenter', () => {
+         firstaction.classList.add('hovered');
+      });
+
+      firstaction.addEventListener('mouseleave', () => {
+         firstaction.classList.remove('hovered'); /* 마우스가 벗어나면 원래 크기로 돌아감 */
+      });
+    </script>
+
 </body>
+
 </html>
