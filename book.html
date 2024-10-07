@@ -5,68 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>book</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-        .goimgclass {
-            width: 40px;
-            height: 40px;
-        }
-
-        .firstaction.hovered {
-            width: 300px;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        .onbookimgtext {
-            display: none;
-        }
-
-        .actionimg.hovered {
-            display: none;
-            .onbookimgtext {
-                display: block;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-    <div class="titlecontainer">
-        <a href="index.html">
-            <h1 class="titleFont">GW_HomePage</h1>
-        </a>
-        <div class="firstaction" id="firstaction">
-            <img src="img/book.png" class="goimgclass">
-            <div><a><img src="img/book.png" class="actionimg"></a></div>
-            <div><img src="img/book.png" class="actionimg"></div>
-            <div><img src="img/lock.png" class="actionimg"></div>
-        </div>
-    </div>
-
-    <script>
-        const firstaction = document.getElementById('firstaction');
-        const actionimgs = document.querySelectorAll('.actionimg'); // 클래스가 actionimg인 모든 요소 선택
-
-        // 첫 번째 div에 대한 마우스 이벤트
-        firstaction.addEventListener('mouseenter', () => {
-            firstaction.classList.add('hovered');
-        });
-
-        firstaction.addEventListener('mouseleave', () => {
-            firstaction.classList.remove('hovered'); /* 마우스가 벗어나면 원래 크기로 돌아감 */
-        });
-
-        // actionimg 클래스가 있는 모든 이미지에 대해 마우스 이벤트 추가
-        actionimgs.forEach(actionimg => {
-            actionimg.addEventListener('mouseenter', () => {
-                actionimg.classList.add('hovered');
-            });
-
-            actionimg.addEventListener('mouseleave', () => {
-                actionimg.classList.remove('hovered');
-            });
-        });
-    </script>
+    <img src="css/images/bookdown.png" style="position: absolute; height: 5%; width: 8%; object-fit:none; left:70%; clip-path: inset(5px round 20px); border: 5px solid red;">
+    <img src="css/images/backbook.png" style="position: absolute; box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);">
 </body>
 
 </html>

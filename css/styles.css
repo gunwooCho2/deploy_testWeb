@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(73, 73, 73);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+a {
+    height: 100%;
+    width: 100%;
+}
+/* 첫 번째 자식을 중앙 정렬 */
+.container div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 두 번째 자식을 시작 정렬 */
+.container div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 50px;
+    color: aliceblue;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.MoveBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.MoveBox.hovered {
+    width: 252.38px;
+    #goaway {
+        display: none;
+    }
+    .hideimg {
+        display: block;
+    }
+}
+
+.hideimg {
+    display: none;
+}
+
+#enemy {
+    display: none;
+    position:absolute;
+    background-color: black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}

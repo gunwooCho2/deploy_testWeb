@@ -2,34 +2,31 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>조건우 홈페이지</title>
-   <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건우 홈페이지</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-   <div class="titlecontainer">
-      <h1 class="titleFont">GW_HomePage</h1>
-      <div class="firstaction" id="firstaction">
-         <img src="img/goaway.png" class="goimgclass">
-         <a href="book.html"><img src="img/book.png" class="actionimg"></a>
-         <a href="game.html"><img src="img/game.png" class="actionimg"></a>
-      </div>
-   </div>
-
-    <script>
-      const firstaction = document.getElementById('firstaction');
-
-      firstaction.addEventListener('mouseenter', () => {
-         firstaction.classList.add('hovered');
-      });
-
-      firstaction.addEventListener('mouseleave', () => {
-         firstaction.classList.remove('hovered'); /* 마우스가 벗어나면 원래 크기로 돌아감 */
-      });
-    </script>
-
+    <div class="container">
+        <h1>Main Page</h1>
+        <div class="MoveBox" id="Move">
+            <img src="css/images/goaway.png" id="goaway">
+            <a href="book.html"><img src="css/images/book.png" class="hideimg"></a>
+            <a href="game.html"><img src="css/images/game.png" class="hideimg"></a>
+        </div>
+    </div>
 </body>
+<script>
+    const Move = document.getElementById('Move');
 
+    Move.addEventListener('mouseenter', () => {
+        Move.classList.add('hovered')
+    })
+
+    Move.addEventListener('mouseleave', () => {
+        Move.classList.remove('hovered')
+    })
+</script>
 </html>
