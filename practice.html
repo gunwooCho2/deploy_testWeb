@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>practice</title>
+    <link rel="stylesheet" href="css/practice.css"/>
+    <script src="css/practice.js" defer></script>
 </head>
-<body style="background-color: rgb(0, 0, 0);">
-    <input type="button" value="Change Color" onclick="change()">
-    <script>
-        function change() {
-            let rgbString = document.body.style.backgroundColor;
-            let rgbValues = rgbString.match(/\d+/g);
-            let red = parseInt(rgbValues[0]);
-            red = Math.abs(red - 255);
-            document.querySelector('body').style.backgroundColor = "rgb(" + red + "," + red + "," + red + ")";
-        }
-    </script>
+<body>
+    <div id="role">
+        <ul style="transform: translateX(-5%);">
+            <li>
+                원을 클릭하세요
+            </li>
+            <li>
+                원을 더블클릭하세요
+            </li>
+        </ul>
+    </div>
+    <div id="clickArea"></div>
 </body>
 </html>
