@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(73, 73, 73);
+    height: 100vh;
+    width: 100%;
+}
+#clickArea{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 0% 0%, white, rgb(0, 0, 0));
+    height: 50%;
+    aspect-ratio: 1/ 1;
+    border-radius: 50%;
+    box-shadow: 35px 35px 70px black;
+}
+#role{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    aspect-ratio: 1/ 1;
+    background-color: rgb(27, 27, 27);
+    color: aquamarine;
+    transform: translateX(200%);
+    box-shadow: inset 10px 10px 10px black;
+    border-radius: 10px;
+}
+.backgroundcontain {
+    background-color: white;
+    position: absolute;
+}
+.backgroundimg {
+    box-shadow: -5px -5px 5px black;
+}

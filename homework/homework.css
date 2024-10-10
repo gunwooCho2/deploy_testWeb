@@ -2,11 +2,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
     background-color: rgb(73, 73, 73);
+    perspective: 1000px;
     height: 100vh;
-    width: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(198, 198, 198);
+    color: rgb(0, 0, 0);
+    height: 50%;
+    border-radius: 10px;
+    width: 15%;
+    transform-style: preserve-3d;
+    transform-origin: left center;
+    box-shadow: 5px 5px 5px black;
 }
 #clickArea{
     position: absolute;
@@ -17,17 +31,15 @@ body {
     height: 50%;
     aspect-ratio: 1/ 1;
     border-radius: 50%;
-    box-shadow: 35px 35px 70px black;
+    box-shadow: 5px 5px 10px black;
 }
-#role{
+p{
+    color: black;
+}
+
+a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30%;
-    aspect-ratio: 1/ 1;
-    background-color: rgb(27, 27, 27);
-    color: aquamarine;
-    transform: translateX(200%);
-    box-shadow: inset 10px 10px 10px black;
-    border-radius: 10px;
 }
+
