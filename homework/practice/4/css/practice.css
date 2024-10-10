@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(73, 73, 73);
+    height: 100vh;
+    width: 100%;
+}
+
+p{
+    font-size: small;
+}
+
+.maincontain {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    height: 70%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow:  inset 10px 10px 20px black;
+    background-color: wheat;
+    transform: translateY(-20%);
+    transition: all 1s;
+}
+
+.flexview {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    transform: translateY(350%);
+    transition: all 1s;
+}
+.hideText {
+    display: none;
+}
+
+.flexview:hover {
+    width: 300px;
+    .viewText{
+        display: none;
+    }
+    .hideText{
+        display: block;
+    }
+    .manu {
+        display: block;
+    }
+}
+
+.manu {
+    display: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: blueviolet;
+}
+
+.block {
+    height: 10%;
+    width: 10%;
+    background-color: rgb(97, 97, 97);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.allinview {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    transform: translateY(350%);
+    transition: all 1s;
+}
+.allinview:hover {
+    width: 300px;
+    .viewText{
+        display: none;
+    }
+    .hideText{
+        display: block;
+    }
+    .manu {
+        display: block;
+    }
+}
+.allinCview{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    transform: translateY(400%);
+    transition: all 1s;
+}
+.allinCview:hover {
+    width: 300px;
+    .viewText{
+        display: none;
+    }
+    .hideText{
+        display: block;
+    }
+    .manu {
+        display: block;
+    }
+}

@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(73, 73, 73);
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 40%;
+    width: 10%;
+    border-radius: 10px;
+    box-shadow:  10px 10px 20px black;
+    background-color: wheat;
+}
+
+.hovered:hover{
+    background-color: rgb(62, 48, 125);
+}
+
+#linked:target{
+    background-color: rgb(62, 48, 125);
+}
+
+input:checked + label{
+    color: rgb(255, 255, 255);
+}
